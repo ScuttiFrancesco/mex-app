@@ -1,0 +1,7 @@
+{
+  "name": "mex-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
