@@ -1,0 +1,86 @@
+<!-- <ion-content [fullscreen]="true"
+  ><div>
+    <ion-card class="container">
+      <div><h1 class="title">Instagram</h1></div>
+
+      <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+        <div>
+          <ion-input
+            type="text"
+            name="username"
+            placeholder=" Username"
+            required
+            ngModel
+          ></ion-input>
+        </div>
+        <div>
+          <ion-input
+            type="password"
+            name="password"
+            placeholder=" Password"
+            required
+            ngModel
+          ></ion-input>
+        </div>
+        <div>
+          <ion-button type="submit" color="secondary" [disabled]="loginForm.invalid">Login</ion-button>
+        </div>
+      </form>
+    </ion-card>
+  </div>
+</ion-content> -->
+
+<div class="container">
+  <div><h1 class="title">LOGIN</h1></div>
+  <div>
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <div>
+        <ion-item lines="full">
+          <ion-input
+            type="text"
+            placeholder="Username"
+            name="username"
+            ngModel
+            required
+          ></ion-input>
+        </ion-item>
+      </div>
+
+      <div>
+        <ion-item lines="full">
+          <ion-input
+            type="password"
+            placeholder="Password"
+            name="password"
+            ngModel
+            required
+          ></ion-input>
+        </ion-item>
+      </div>
+
+      <div>
+        <ion-button
+          type="submit"
+          expand="block"
+          color="primary"
+          [disabled]="!loginForm.form.valid"
+        >
+          Log In
+        </ion-button>
+      </div>
+      
+      @if(errorMessage){
+      <div class="errorMex">{{errorMessage}}</div>
+      }
+
+      <div class="forgot-password">
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <div class="signup-option">
+        Don't have an account?
+        <a href="#">Sign up</a>
+      </div>
+    </form>
+  </div>
+</div>

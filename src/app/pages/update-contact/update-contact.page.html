@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar
+    ><ion-title style="font-size: 1rem; color: white"> Ciccio </ion-title>
+    <ion-item>
+      <ion-buttons>
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Insert Contact</ion-title></ion-item
+    >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-top">
+  <form #insertForm="ngForm" (ngSubmit)="updateContact(insertForm)">
+    <div class="container">
+      <ion-input
+        type="number"
+        name="userId"
+        placeholder="Id"
+        required
+        [(ngModel)]="userId">
+      </ion-input>
+      <ion-input
+        type="text"
+        name="nickname"
+        placeholder="Nickname"
+        required
+        [(ngModel)]="nickname"
+      ></ion-input>
+    </div>
+    <ion-button type="submit" color="secondary" size="full">Update</ion-button>
+  </form>
+</ion-content>
+
+

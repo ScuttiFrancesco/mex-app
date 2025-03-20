@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Mario",
+        "lastname": "Rossi",
+        "phone": "+39 123 456 7890",
+        "immagineProfilo": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Luigi",
+        "lastname": "Verdi",
+        "phone": "+39 234 567 8901",
+        "immagineProfilo": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Giovanni",
+        "lastname": "Bianchi",
+        "phone": "+39 345 678 9012",
+        "immagineProfilo": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Francesca",
+        "lastname": "Neri",
+        "phone": "+39 456 789 0123",
+        "immagineProfilo": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Alessandro",
+        "lastname": "Gialli",
+        "phone": "+39 567 890 1234",
+        "immagineProfilo": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Giulia",
+        "lastname": "Blu",
+        "phone": "+39 678 901 2345",
+        "immagineProfilo": "https://randomuser.me/api/portraits/women/6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Lorenzo",
+        "lastname": "Viola",
+        "phone": "+39 789 012 3456",
+        "immagineProfilo": "https://randomuser.me/api/portraits/men/7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Martina",
+        "lastname": "Arancione",
+        "phone": "+39 890 123 4567",
+        "immagineProfilo": "https://randomuser.me/api/portraits/women/8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Davide",
+        "lastname": "Rosa",
+        "phone": "+39 901 234 5678",
+        "immagineProfilo": "https://randomuser.me/api/portraits/men/9.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Sara",
+        "lastname": "Marrone",
+        "phone": "+39 012 345 6789",
+        "immagineProfilo": "https://randomuser.me/api/portraits/women/10.jpg"
+    }
+]

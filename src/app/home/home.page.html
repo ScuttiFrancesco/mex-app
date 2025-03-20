@@ -1,20 +1,50 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header>
+  <div style="font-size: 1rem; color: white">Lista Contatti</div>
+  <ion-title>
+    <div class="title" #headerTitle>Lista Contatti</div>
+  </ion-title>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+@if(showSearchInput){
+<ion-searchbar
+  #searchBar
+  (ionFocus)="searchInputTouched()"
+  [(ngModel)]="searchInput"
+  (ngModelChange)="getContacts()"
+  showCancelButton="ionFocus"
+></ion-searchbar
+>}
+<ion-content class="ion-padding-top">
+  <div style="display: flex; justify-content: space-around">
+    <app-itk-button
+      [Text]="'Apri Modale 1'"
+      [Size]="200"
+      (click)="openModal(1)"
+    ></app-itk-button>
+    <app-itk-button
+      [Text]="'Apri Modale 2'"
+      [Size]="200"
+      (click)="openModal(2)"
+    ></app-itk-button>
   </div>
-</ion-content>
+  <div style="display: flex; justify-content: space-between">
+    <div>{{modaleMex1}}</div>
+    <div>{{modaleMex2}}</div>
+  </div>
+  <ng-container #modalContainer> </ng-container>
+  <div *ngFor="let contact of contacts">
+    <ion-item (click)="openChat(contact.id)">
+      <ion-avatar>
+        <img [src]="contact.immagineProfilo" />
+      
+      </ion-avatar>
+      {{contact.id}}
+      <ion-title>
+        <h4>{{contact.name}} {{contact.surname}}</h4>
+      </ion-title>
+    </ion-item>
+  </div> </ion-content
+><app-add-button
+  [backgroundAdd]="'danger'"
+  [backgroundLogout]="'dark'"
+  (showSearchInputChange)="onSearchInputChanged($event)"
+></app-add-button>

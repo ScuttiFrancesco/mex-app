@@ -1,2 +1,13 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+@font-face {
+    font-family: 'Instagram Sans';
+    src: url('../assets/fonts/Instagram\ Sans\ Medium.woff') format('truetype'); // Assicurati che il percorso sia corretto
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  :root {
+    --ion-font-family: 'Instagram Sans', sans-serif;
+    --ion-color-title: rgb(76, 158, 252);
+  }

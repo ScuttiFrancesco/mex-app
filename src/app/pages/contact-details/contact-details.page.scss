@@ -1,0 +1,30 @@
+ion-title {
+  padding-left: 20%;
+  font-size: 1.5rem;
+}
+
+ion-item {
+  padding-bottom: 0px;
+}
+
+img {
+  padding-left: 42.5%;
+  padding-bottom: 5%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+ion-button {
+  padding-top: 5%;
+}
+
+#mapContainer {
+  margin-top: 25px;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 25px;
+}

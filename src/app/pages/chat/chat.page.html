@@ -1,0 +1,76 @@
+<ion-header [translucent]="true">
+  <ion-toolbar
+    ><ion-title style="font-size: 1rem; color: white"> Ciccio </ion-title>
+    <ion-item>
+      <ion-buttons>
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+      <ion-avatar>
+        <img src="{{contact?.immagineProfilo}}" />
+      </ion-avatar>
+      <div class="title" (click)="contactDetails(contact?.id!)">
+        {{contact?.name}} {{contact?.surname}}
+      </div>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-top">
+
+  <div style="display: flex; justify-content: space-between">
+    <div>{{modaleMex1}}</div>
+    <div>{{modaleMex2}}</div>
+  </div>
+
+  <div *ngFor="let messaggio of messages">
+    @if(messaggio.senderId === contact!.username || messaggio.reciever === contact!.username){
+    <div class="contact">{{messaggio.senderId}}:</div>
+    <ion-item>
+      <div class="text">{{messaggio.message}}</div>
+      <div *ngIf="messaggio.fileImg"><img src="{{messaggio.fileImg}}" /></div>
+      <div class="time">
+        {{messaggio.date | date : "hh:mm - dd/MM "}}
+      </div> </ion-item
+    >}
+    </div>
+</ion-content>
+
+<div>
+  <form #replyForm="ngForm" (ngSubmit)="send(replyForm)">
+    <ion-item lines="none">
+      <ion-textarea
+        class="reply-input"
+        type="text-area"
+        name="text"
+        [(ngModel)]="testo"
+      ></ion-textarea
+      ><ion-button type="submit" fill="clear" color="dark"
+        ><ion-icon name="send-outline"></ion-icon
+      ></ion-button>
+      <ion-button fill="clear" color="dark" (click)="attach()"
+        ><ion-icon name="attach-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </form>
+</div>
+@if(showAttach){
+<form #idForm="ngForm" (ngSubmit)="loadImg(idForm)">
+  <ion-item>
+    <ion-input
+      class="id"
+      placeholder="Inserire un id"
+      type="number"
+      name="id"
+      ngModel
+      required
+    ></ion-input>
+    <ion-button color="dark" type="submit">load </ion-button></ion-item
+  >
+</form>
+}
+<div>
+  <button
+   (click)="clickEvents=[]; $event.stopPropagation()">Clear</button>
+   @for(click of clickEvents; track $index){<div
+    [style.left.px]="click.event.clientX" [style.top.px]="click.event.clientY" class="click" [ngStyle]="{'background-color': click.color, 'height': click.height + 'px', 'width': click.width + 'px'}"></div>}
+</div>

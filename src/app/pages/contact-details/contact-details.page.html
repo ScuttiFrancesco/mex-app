@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar
+    ><ion-title style="font-size: 1rem; color: white"> Ciccio </ion-title>
+    <ion-item>
+      <ion-buttons>
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+      <ion-title> Contact Details </ion-title></ion-item
+    >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-top"
+  ><ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-item>
+    <img src="{{contact?.immagineProfilo}}" />
+  </ion-item>
+  <div class="details">
+    <div>
+      <ion-item>
+        <div><strong>Name: </strong>{{contact?.name}}</div>
+      </ion-item>
+    </div>
+    <div>
+      <ion-item>
+        <div><strong>Lastname: </strong>{{contact?.surname}}</div>
+      </ion-item>
+    </div>
+    <div>
+      <ion-item>
+        <div><strong>Email: </strong>{{contact?.email}}</div>
+      </ion-item>
+    </div>
+    <ion-button
+      color="secondary"
+      (click)="updateContact(contact!.id, contact!.nickname)"
+      >Update Contact</ion-button
+    >
+    <ion-button color="danger" (click)="deleteContact(contact!.id)"
+      >Delete Contact</ion-button
+    >
+  </div>
+  <div id="mapContainer" #mapContainer></div>
+</ion-content>

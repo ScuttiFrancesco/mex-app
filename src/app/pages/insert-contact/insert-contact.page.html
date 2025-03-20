@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar
+    ><ion-title style="font-size: 1rem; color: white"> Ciccio </ion-title>
+    <ion-item>
+      <ion-buttons>
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Insert Contact</ion-title></ion-item
+    >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-top">
+  <form [formGroup]="registrationFormGroup" (ngSubmit)="insertContact()">
+    <ion-card>
+      <div class="container">
+        <ion-item>
+        <ion-input
+            type="text"
+            formControlName="id"
+            placeholder="Search by username"
+            (ionInput)="onSearchContact($event)"
+          ></ion-input>
+       </ion-item>
+        <ion-list class="list" *ngIf="!hideListItem && filteredContacts.length > 0 && registrationFormGroup.get('id')!.value !== ''">
+          <ion-item
+            *ngFor="let contact of filteredContacts"
+            (click)="selectContact(contact.username)"
+          >
+            {{ contact.username }}
+          </ion-item>
+        </ion-list>
+        <div
+          *ngIf="formControlli['id'].invalid && (formControlli['id'].dirty || formControlli['id'].touched)"
+          class="error-message"
+        >
+          <div *ngIf="formControlli['id'].errors?.['required']">
+            Il campo id è obbligatorio.
+          </div>
+        </div>
+        <ion-input
+          type="text"
+          formControlName="nickname"
+          placeholder="Nickname"
+          id="nickname"
+        ></ion-input>
+      </div>
+    </ion-card>
+    <ion-button
+      type="submit"
+      color="secondary"
+      size="full"
+      [disabled]="registrationFormGroup.invalid"
+      >Insert</ion-button
+    >
+  </form>
+</ion-content>
