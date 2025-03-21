@@ -14,16 +14,48 @@
 ></ion-searchbar
 >}
 <ion-content class="ion-padding-top">
-  <div style="display: flex; justify-content: space-around">
+  <div style="display: flex; justify-content: space-around; align-items: center;">
     <app-itk-button
+    [CssClass]="'btn-primary'"
       [Text]="'Apri Modale 1'"
-      [Size]="200"
+      [Size]="100"
+      (click)="openModal(10)"
+    ></app-itk-button>
+    <app-itk-button
+    [CssClass]="'btn-primary'"
+      [Text]="'Clienti'"
+      [Size]="100"
       (click)="openModal(1)"
     ></app-itk-button>
     <app-itk-button
+    [CssClass]="'btn-primary'"
+    [Text]="'Vetture'"
+    [Size]="100"
+    (click)="openModal(2)"
+  ></app-itk-button>
+  <app-itk-button
+  [CssClass]="'btn-primary'"
+  [Text]="'Viaggi'"
+  [Size]="100"
+  (click)="openModal(3)"
+></app-itk-button>
+<app-itk-button
+[CssClass]="'btn-primary'"
+  [Text]="'Prenotazioni'"
+  [Size]="100"
+  (click)="openModal(4)"
+></app-itk-button>
+<app-itk-button
+[CssClass]="'btn-primary'"
+  [Text]="'Servizi'"
+  [Size]="100"
+  (click)="openModal(5)"
+></app-itk-button>
+    <app-itk-button
+    [CssClass]="'btn-primary'"
       [Text]="'Apri Modale 2'"
-      [Size]="200"
-      (click)="openModal(2)"
+      [Size]="100"
+      (click)="openModal(20)"
     ></app-itk-button>
   </div>
   <div style="display: flex; justify-content: space-between">
@@ -35,7 +67,6 @@
     <ion-item (click)="openChat(contact.id)">
       <ion-avatar>
         <img [src]="contact.immagineProfilo" />
-      
       </ion-avatar>
       {{contact.id}}
       <ion-title>

@@ -43,6 +43,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/update-contact/update-contact.module').then( m => m.UpdateContactPageModule),
     canActivate: [AuthGuard],
   },
+  {
+    path: 'tables',
+    loadChildren: () => import('./pages/tables/tables.module').then( m => m.TablesPageModule),
+    canActivate: [AuthGuard],
+  },
 ];
 
 @NgModule({

@@ -240,7 +240,14 @@ export class HomePage
   modal: ComponentRef<ModalComponent> | undefined;
   private dataService: DataService = inject(DataService);
 
+
   openModal(modale: number) {
+    if (modale < 10) {
+      this.dataService.tipoOggetto.set(modale);      
+      console.log('Tipo oggetto: ', this.dataService.tipoOggetto());
+      this.router.navigate(['tables']);
+      return;
+    }
     this.modal = this.modalContainer?.createComponent(ModalComponent);
     if (this.modal) {
       this.modal.instance.title = 'Titolo della modale';
@@ -248,9 +255,9 @@ export class HomePage
         this.modal?.destroy();
       });
       this.modal.instance.closeModal.subscribe((param) => {
-        if (modale === 1) {
+        if (modale === 10) {
           this.modaleMex1 = param;
-        } else {
+        } else if (modale === 20){
           this.modaleMex2 = param;
         }
 
