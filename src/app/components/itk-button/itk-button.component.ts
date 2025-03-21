@@ -30,7 +30,7 @@ import { Router } from '@angular/router';
     `
       .btn-primary,
       .btn-outline,
-      .btn-primary-disabled,
+      ,
       .btn-delete,
       .btn-delete-secondary,
       .btn-stylized,
@@ -43,11 +43,19 @@ import { Router } from '@angular/router';
         color: black;
         letter-spacing: 2px;
         border: solid 1px black;
-        padding: 0.5rem;
+        padding: 10px;
       }
 
       .btn-primary-disabled {
-        background-color: var(--primary-blue-disabled);
+        border-radius: 5px;
+        width: 15vw;
+        height: 5vh;
+        background-color:rgb(255, 255, 255);
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: 2px;
+        border: solid 1px black;
+        padding: 10px;        
       }
 
       .btn-outline {
@@ -94,7 +102,7 @@ export class ItkButtonComponent implements OnInit {
   @Input() Icon!: string;
   @Input({ required: false }) Text!: string;
   @Input() Disabled!: boolean;
-  @Input() CssClass: string = 'btn-primary';
+  @Input() CssClass: string = '';
   @Output() clicked: EventEmitter<boolean> = new EventEmitter();
   @Input({ transform: numberAttribute }) Size: number = 100;
 

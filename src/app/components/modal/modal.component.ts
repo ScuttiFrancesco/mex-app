@@ -41,6 +41,7 @@ import { IonicModule, IonTextarea } from '@ionic/angular';
           </div>
         </div>
         <app-itk-button
+        [CssClass]="'btn-primary'"
           Text="Invia"
           [Size]="100"
           type="submit"
@@ -48,6 +49,7 @@ import { IonicModule, IonTextarea } from '@ionic/angular';
         ></app-itk-button>
       </form>
       <app-itk-button
+      [CssClass]="'btn-primary'"
         Text="Chiudi"
         [Size]="100"
         (click)="chiudiModale()"

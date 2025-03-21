@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-item>
+    <ion-buttons>
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{tableTitle}}</ion-title>
+  </ion-item>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-itk-tables [colonne]="colonne" [righe]="page"></app-itk-tables>
+  <div class="pagination">
+    <app-itk-button [CssClass]="currentPage===1?'btn-primary-disabled':'btn-primary'" [Text]="'Prev'" (click)="prevPage()" [Disabled]="currentPage === 1"></app-itk-button>
+    <span>{{currentPage}}</span>
+    <app-itk-button [CssClass]="currentPage===totalPages?'btn-primary-disabled':'btn-primary'" [Text]="'Next'" (click)="nextPage()" [Disabled]="currentPage === totalPages"></app-itk-button>
+  </div>
+</ion-content>

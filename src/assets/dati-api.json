@@ -1,0 +1,160 @@
+[{
+  
+    "Clienti": [
+      {
+        "nome": "Mario",
+        "cognome": "Rossi",
+        "indirizzo": "Via Roma, 10, Milano",
+        "telefono": "3331234567"
+      },
+      {
+        "nome": "Giulia",
+        "cognome": "Bianchi",
+        "indirizzo": "Piazza del Duomo, 5, Firenze",
+        "telefono": "3479876543"
+      },
+      {
+        "nome": "Luca",
+        "cognome": "Verdi",
+        "indirizzo": "Corso Italia, 22, Roma",
+        "telefono": "3395551212"
+      },
+      {
+        "nome": "Anna",
+        "cognome": "Neri",
+        "indirizzo": "Via Garibaldi, 1, Torino",
+        "telefono": "3408889999"
+      },
+      {
+        "nome": "Paolo",
+        "cognome": "Gialli",
+        "indirizzo": "Viale Dante, 15, Napoli",
+        "telefono": "3382223333"
+      }
+    ]},
+    {
+    "Vetture": [
+      {
+        "targa": "AB123CD",
+        "modello": "Panda",
+        "marca": "Fiat"
+      },
+      {
+        "targa": "EF456GH",
+        "modello": "Giulia",
+        "marca": "Alfa Romeo"
+      },
+      {
+        "targa": "IJ789KL",
+        "modello": "Golf",
+        "marca": "Volkswagen"
+      },
+      {
+        "targa": "MN012OP",
+        "modello": "A3",
+        "marca": "Audi"
+      },
+      {
+        "targa": "QR345ST",
+        "modello": "Classe A",
+        "marca": "Mercedes-Benz"
+      }
+    ]},
+    {
+    "Viaggi": [
+      {
+        "data": "2024-01-15",
+        "destinazione": "Parigi"
+      },
+      {
+        "data": "2024-02-20",
+        "destinazione": "Londra"
+      },
+      {
+        "data": "2024-03-10",
+        "destinazione": "Berlino"
+      },
+      {
+        "data": "2024-04-05",
+        "destinazione": "Barcellona"
+      },
+      {
+        "data": "2024-05-01",
+        "destinazione": "Roma"
+      }
+    ]},
+    {
+    "Prenotazioni": [
+      {
+        "id_prenotazione": 1,
+        "id_cliente": 1,
+        "id_viaggio": 2,
+        "data_prenotazione": "2023-12-20",
+        "stato": "Confermata"
+      },
+      {
+        "id_prenotazione": 2,
+        "id_cliente": 3,
+        "id_viaggio": 1,
+        "data_prenotazione": "2024-01-05",
+        "stato": "In attesa"
+      },
+      {
+        "id_prenotazione": 3,
+        "id_cliente": 2,
+        "id_viaggio": 3,
+        "data_prenotazione": "2024-01-10",
+        "stato": "Confermata"
+      },
+      {
+        "id_prenotazione": 4,
+        "id_cliente": 4,
+        "id_viaggio": 4,
+        "data_prenotazione": "2023-12-28",
+        "stato": "Cancellata"
+      },
+      {
+        "id_prenotazione": 5,
+        "id_cliente": 5,
+        "id_viaggio": 5,
+        "data_prenotazione": "2024-01-15",
+        "stato": "Confermata"
+      }
+    ]},
+    {
+    "Servizi": [
+      {
+        "id_servizio": 1,
+        "nome_servizio": "Guida turistica",
+        "descrizione": "Visita guidata della città",
+        "prezzo": 50.00
+      },
+      {
+        "id_servizio": 2,
+        "nome_servizio": "Noleggio auto",
+        "descrizione": "Noleggio auto per l'intera durata del viaggio",
+        "prezzo": 100.00
+      },
+      {
+        "id_servizio": 3,
+        "nome_servizio": "Assicurazione viaggio",
+        "descrizione": "Copertura assicurativa completa",
+        "prezzo": 30.00
+      },
+      {
+        "id_servizio": 4,
+        "nome_servizio": "Trasferimento aeroporto",
+        "descrizione": "Trasferimento da/per l'aeroporto",
+        "prezzo": 25.00
+      },
+      {
+        "id_servizio": 5,
+        "nome_servizio": "Biglietti musei",
+        "descrizione": "Biglietti d'ingresso per i principali musei",
+        "prezzo": 40.00
+      }
+    
+     ] 
+     }
+]
+ 
