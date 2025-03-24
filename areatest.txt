@@ -1,0 +1,4 @@
+-build progetto: ng build
+-cartella progetto(folder dist) -> browser copiare files
+-desktop remoto : 10.0.110.5
+- cerca: iis internt information services -> progetto -> esplora -> fare backup sul desktop tranne web config e trasferire file dalla cartella progetto 
