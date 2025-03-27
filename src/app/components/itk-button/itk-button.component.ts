@@ -29,12 +29,7 @@ import { Router } from '@angular/router';
   styles: [
     `
       .btn-primary,
-      .btn-outline,
-      ,
-      .btn-delete,
-      .btn-delete-secondary,
-      .btn-stylized,
-      .btn-simple {
+      .btn-outline{
         border-radius: 5px;
         width: 15vw;
         height: 5vh;
@@ -42,8 +37,35 @@ import { Router } from '@angular/router';
         text-transform: uppercase;
         color: black;
         letter-spacing: 2px;
+        border: solid 1px black;   
+        padding-right: 5px;
+        padding-left: 5px;     
+      }
+
+      .btn-delete{
+        border-radius: 5px;
+        width: 15vw;
+        height: 5vh;
+        background-color:rgb(188, 42, 42);
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 2px;
         border: solid 1px black;
-        padding: 10px;
+        padding-right: 5px;
+        padding-left: 5px; 
+      }
+
+      .btn-insert{
+        border-radius: 5px;
+        width: 15vw;
+        height: 5vh;
+        background-color:rgb(19, 131, 53);
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 2px;
+        border: solid 1px black;
+        padding-right: 5px;
+        padding-left: 5px; 
       }
 
       .btn-primary-disabled {
@@ -55,41 +77,11 @@ import { Router } from '@angular/router';
         color: black;
         letter-spacing: 2px;
         border: solid 1px black;
-        padding: 10px;        
+        padding-right: 5px;
+        padding-left: 5px;         
       }
 
-      .btn-outline {
-        background-color: white;
-        color: var(--primary-blue);
-        border: 2px solid var(--primary-blue);
-      }
-
-      .btn-delete {
-        background-color: var(--primary-red);
-        color: white;
-      }
-
-      .btn-delete-secondary {
-        background-color: var(--secondary-red);
-        color: var(--primary-red);
-      }
-
-      .btn-stylized,
-      .btn-simple:hover {
-        text-decoration: underline;
-        color: var(--primary-blue);
-        background-color: white;
-        box-shadow: none;
-        text-underline-offset: 4px;
-        text-decoration-thickness: 2px;
-      }
-
-      .btn-simple {
-        background-color: white;
-        color: black;
-        box-shadow: none;
-        width: fit-content !important;
-      }
+      
 
       .material-icons {
         color: white;

@@ -1,160 +1,197 @@
-[{
-  
-    "Clienti": [
-      {
-        "nome": "Mario",
-        "cognome": "Rossi",
-        "indirizzo": "Via Roma, 10, Milano",
-        "telefono": "3331234567"
-      },
-      {
-        "nome": "Giulia",
-        "cognome": "Bianchi",
-        "indirizzo": "Piazza del Duomo, 5, Firenze",
-        "telefono": "3479876543"
-      },
-      {
-        "nome": "Luca",
-        "cognome": "Verdi",
-        "indirizzo": "Corso Italia, 22, Roma",
-        "telefono": "3395551212"
-      },
-      {
-        "nome": "Anna",
-        "cognome": "Neri",
-        "indirizzo": "Via Garibaldi, 1, Torino",
-        "telefono": "3408889999"
-      },
-      {
-        "nome": "Paolo",
-        "cognome": "Gialli",
-        "indirizzo": "Viale Dante, 15, Napoli",
-        "telefono": "3382223333"
-      }
-    ]},
+{
+  "Clienti": [
     {
-    "Vetture": [
-      {
-        "targa": "AB123CD",
-        "modello": "Panda",
-        "marca": "Fiat"
-      },
-      {
-        "targa": "EF456GH",
-        "modello": "Giulia",
-        "marca": "Alfa Romeo"
-      },
-      {
-        "targa": "IJ789KL",
-        "modello": "Golf",
-        "marca": "Volkswagen"
-      },
-      {
-        "targa": "MN012OP",
-        "modello": "A3",
-        "marca": "Audi"
-      },
-      {
-        "targa": "QR345ST",
-        "modello": "Classe A",
-        "marca": "Mercedes-Benz"
-      }
-    ]},
+      "id": "g7h8",
+      "nome": "Anna",
+      "cognome": "Neri",
+      "indirizzo": "Via Garibaldi, 1, Torino",
+      "telefono": "3408889999"
+    },
     {
-    "Viaggi": [
-      {
-        "data": "2024-01-15",
-        "destinazione": "Parigi"
-      },
-      {
-        "data": "2024-02-20",
-        "destinazione": "Londra"
-      },
-      {
-        "data": "2024-03-10",
-        "destinazione": "Berlino"
-      },
-      {
-        "data": "2024-04-05",
-        "destinazione": "Barcellona"
-      },
-      {
-        "data": "2024-05-01",
-        "destinazione": "Roma"
-      }
-    ]},
+      "id": "464d",
+      "nome": "Francesco",
+      "cognome": "Scutti",
+      "indirizzo": "via dell'inprunteta 13b",
+      "telefono": "3493536267"
+    },
     {
-    "Prenotazioni": [
-      {
-        "id_prenotazione": 1,
-        "id_cliente": 1,
-        "id_viaggio": 2,
-        "data_prenotazione": "2023-12-20",
-        "stato": "Confermata"
-      },
-      {
-        "id_prenotazione": 2,
-        "id_cliente": 3,
-        "id_viaggio": 1,
-        "data_prenotazione": "2024-01-05",
-        "stato": "In attesa"
-      },
-      {
-        "id_prenotazione": 3,
-        "id_cliente": 2,
-        "id_viaggio": 3,
-        "data_prenotazione": "2024-01-10",
-        "stato": "Confermata"
-      },
-      {
-        "id_prenotazione": 4,
-        "id_cliente": 4,
-        "id_viaggio": 4,
-        "data_prenotazione": "2023-12-28",
-        "stato": "Cancellata"
-      },
-      {
-        "id_prenotazione": 5,
-        "id_cliente": 5,
-        "id_viaggio": 5,
-        "data_prenotazione": "2024-01-15",
-        "stato": "Confermata"
-      }
-    ]},
+      "id": "6bb7",
+      "nome": "Chiara",
+      "cognome": "Scutti",
+      "indirizzo": "Via Oldenico 28",
+      "telefono": "3409687719"
+    }
+  ],
+  "Vetture": [
     {
-    "Servizi": [
-      {
-        "id_servizio": 1,
-        "nome_servizio": "Guida turistica",
-        "descrizione": "Visita guidata della città",
-        "prezzo": 50.00
-      },
-      {
-        "id_servizio": 2,
-        "nome_servizio": "Noleggio auto",
-        "descrizione": "Noleggio auto per l'intera durata del viaggio",
-        "prezzo": 100.00
-      },
-      {
-        "id_servizio": 3,
-        "nome_servizio": "Assicurazione viaggio",
-        "descrizione": "Copertura assicurativa completa",
-        "prezzo": 30.00
-      },
-      {
-        "id_servizio": 4,
-        "nome_servizio": "Trasferimento aeroporto",
-        "descrizione": "Trasferimento da/per l'aeroporto",
-        "prezzo": 25.00
-      },
-      {
-        "id_servizio": 5,
-        "nome_servizio": "Biglietti musei",
-        "descrizione": "Biglietti d'ingresso per i principali musei",
-        "prezzo": 40.00
-      }
-    
-     ] 
-     }
-]
- 
+      "id": "k1l2",
+      "targa": "AB123CD",
+      "modello": "Panda",
+      "marca": "Fiat"
+    },
+    {
+      "id": "m3n4",
+      "targa": "EF456GH",
+      "modello": "Giulia",
+      "marca": "Alfa Romeo"
+    },
+    {
+      "id": "q7r8",
+      "targa": "MN012OP",
+      "modello": "A3",
+      "marca": "Audi"
+    },
+    {
+      "id": "s9t0",
+      "targa": "QR345ST",
+      "modello": "Classe A",
+      "marca": "Mercedes-Benz"
+    },
+    {
+      "id": "c29d",
+      "targa": "SE582SQ",
+      "modello": "500",
+      "marca": "Fiat"
+    }
+  ],
+  "Viaggi": [
+    {
+      "id": "w3x4",
+      "data": "2024-01-15",
+      "destinazione": "Parigi"
+    },
+    {
+      "id": "y5z6",
+      "data": "2024-02-20",
+      "destinazione": "Londra"
+    },
+    {
+      "id": "3c4d",
+      "data": "2024-04-05",
+      "destinazione": "Barcellona"
+    },
+    {
+      "id": "5e6f",
+      "data": "2024-05-01",
+      "destinazione": "Roma"
+    }
+  ],
+  "Prenotazioni": [
+    {
+      "id": "7g8h",
+      "id_prenotazione": 1,
+      "id_cliente": 1,
+      "id_viaggio": 2,
+      "data_prenotazione": "2023-12-20",
+      "stato": "Confermata"
+    },
+    {
+      "id": "9i0j",
+      "id_prenotazione": 2,
+      "id_cliente": 3,
+      "id_viaggio": 1,
+      "data_prenotazione": "2024-01-05",
+      "stato": "In attesa"
+    },
+    {
+      "id": "b1c2",
+      "id_prenotazione": 3,
+      "id_cliente": 2,
+      "id_viaggio": 3,
+      "data_prenotazione": "2024-01-10",
+      "stato": "Confermata"
+    },
+    {
+      "id": "d3e4",
+      "id_prenotazione": 4,
+      "id_cliente": 4,
+      "id_viaggio": 4,
+      "data_prenotazione": "2023-12-28",
+      "stato": "Cancellata"
+    },
+    {
+      "id": "f5g6",
+      "id_prenotazione": 5,
+      "id_cliente": 5,
+      "id_viaggio": 5,
+      "data_prenotazione": "2024-01-15",
+      "stato": "Confermata"
+    },
+    {
+      "id": "cfef",
+      "id_prenotazione": "f",
+      "id_cliente": "f",
+      "id_viaggio": "f",
+      "data_prenotazione": "2022-11-01",
+      "stato": "f"
+    },
+    {
+      "id": "0422",
+      "id_prenotazione": "e",
+      "id_cliente": "e",
+      "id_viaggio": "e",
+      "data_prenotazione": "e",
+      "stato": "e"
+    },
+    {
+      "id": "60f0",
+      "id_prenotazione": "f",
+      "id_cliente": "f",
+      "id_viaggio": "f",
+      "data_prenotazione": "2024-11-11",
+      "stato": "f"
+    },
+    {
+      "id": "1d18",
+      "id_prenotazione": "4",
+      "id_cliente": "4",
+      "id_viaggio": "4",
+      "data_prenotazione": "2025-15-02",
+      "stato": ""
+    }
+  ],
+  "Servizi": [
+    {
+      "id": "h7i8",
+      "id_servizio": 1,
+      "nome_servizio": "Guida turistica",
+      "descrizione": "Visita guidata della città",
+      "prezzo": 50
+    },
+    {
+      "id": "j9k0",
+      "id_servizio": 2,
+      "nome_servizio": "Noleggio auto",
+      "descrizione": "Noleggio auto per l'intera durata del viaggio",
+      "prezzo": 100
+    },
+    {
+      "id": "l1m2",
+      "id_servizio": 3,
+      "nome_servizio": "Assicurazione viaggio",
+      "descrizione": "Copertura assicurativa completa",
+      "prezzo": 30
+    },
+    {
+      "id": "n3o4",
+      "id_servizio": 4,
+      "nome_servizio": "Trasferimento aeroporto",
+      "descrizione": "Trasferimento da/per l'aeroporto",
+      "prezzo": 25
+    },
+    {
+      "id": "p5q6",
+      "id_servizio": 5,
+      "nome_servizio": "Biglietti musei",
+      "descrizione": "Biglietti d'ingresso per i principali musei",
+      "prezzo": 40
+    },
+    {
+      "id": "371c",
+      "id_servizio": "1",
+      "nome_servizio": "dfasfa",
+      "descrizione": "afsasdfa",
+      "prezzo": "56"
+    }
+  ]
+}

@@ -31,6 +31,7 @@
     "@ionic/core": "^8.4.3",
     "@ionic/storage-angular": "^4.0.0",
     "ionicons": "^7.0.0",
+    "json-server": "^1.0.0-beta.3",
     "leaflet": "^1.9.4",
     "ngx-mqtt": "^17.0.0",
     "rxjs": "~7.8.0",

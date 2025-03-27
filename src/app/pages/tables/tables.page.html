@@ -8,10 +8,14 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <app-itk-tables [colonne]="colonne" [righe]="page"></app-itk-tables>
+  <app-itk-tables [colonne]="colonne" [righe]="page" (deleteRow)="onDelete($event)" ></app-itk-tables>
   <div class="pagination">
     <app-itk-button [CssClass]="currentPage===1?'btn-primary-disabled':'btn-primary'" [Text]="'Prev'" (click)="prevPage()" [Disabled]="currentPage === 1"></app-itk-button>
     <span>{{currentPage}}</span>
     <app-itk-button [CssClass]="currentPage===totalPages?'btn-primary-disabled':'btn-primary'" [Text]="'Next'" (click)="nextPage()" [Disabled]="currentPage === totalPages"></app-itk-button>
   </div>
+
+  <app-form/>
 </ion-content>
+
+

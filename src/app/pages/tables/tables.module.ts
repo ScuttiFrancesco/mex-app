@@ -9,6 +9,7 @@ import { TablesPageRoutingModule } from './tables-routing.module';
 import { TablesPage } from './tables.page';
 import { ItkTablesComponent } from 'src/app/components/itk-tables/itk-tables.component';
 import { ItkButtonComponent } from 'src/app/components/itk-button/itk-button.component';
+import { FormComponent } from 'src/app/components/form/form.component';
 
 @NgModule({
   imports: [
@@ -17,8 +18,9 @@ import { ItkButtonComponent } from 'src/app/components/itk-button/itk-button.com
     IonicModule,
     TablesPageRoutingModule,
     ItkTablesComponent,
-    ItkButtonComponent
+    ItkButtonComponent,
+    FormComponent
   ],
-  declarations: [TablesPage]
+  declarations: [TablesPage,]
 })
 export class TablesPageModule {}
